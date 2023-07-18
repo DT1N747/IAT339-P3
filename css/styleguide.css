@@ -164,3 +164,85 @@ main{
     margin: 6rem 2rem;
 
 }
+
+
+/* branding style  */
+.brand-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .brand-block {
+    /* background-color: white; */
+    max-width: 22rem;
+    padding: 1.5rem;
+    align-items: center;
+    border: 1px solid white;
+  }
+  
+  .brand-block h2,
+  .branding-block h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .brand-block-p {
+    margin-bottom: 1.4rem;
+    /* border:1px solid black; */
+    margin-top: 1.1rem;
+    font-size: 1rem;
+  
+  }
+
+  
+  .brand-color1 {
+    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    padding: 3rem;
+    width: 20rem;
+    height: auto;
+  }
+  
+  .brand-color-black {
+    background-color: black;
+    padding: 3rem;
+    width: 20rem;
+    height: auto;
+    border: 1px solid white;
+  }
+
+  .brand-color-white{
+    background-color: white;
+    padding: 3rem;
+    width: 20rem;
+  }
+  .brand-color2{
+    background-color: #4ff3ff;
+    padding: 3rem;
+    width: 20rem;
+  }
+
+
+  .brand-img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(90%)
+  }
+  
+  .image-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .brandinfo p {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin-top: 0;
+  
+  }
+  
+  .brandinfo h4 {
+    margin-bottom: 0.4rem;
+  }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Nato;
+    src: url(../fonts/Noto_Sans_Cypro_Minoan/NotoSansCyproMinoan-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf), url(../fonts/Poppins/Poppins-Black.ttf), url(../fonts/Poppins/Poppins-Light.ttf), url(../fonts/Poppins/Poppins-Medium.ttf);
+}
