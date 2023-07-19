@@ -247,3 +247,191 @@ main{
   .brandinfo h4 {
     margin-bottom: 0.4rem;
   }
+
+
+  
+  .line {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 0;
+    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    z-index: 9;
+    transition: height 0.3s ease;
+  }
+  
+  .page {
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to right, #f923eb, #4ff3ff); */
+    background-color: black;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    /* border: 2px solid red; */
+  
+  }
+  
+  .page-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10rem;
+    color: white;
+  
+  }
+  
+  .page-section {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid blue; */
+  }
+  
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid green; */
+  
+  }
+  
+  .page-content img {
+    width: 100%;
+    /* border: 2px solid pink; */
+  
+  }
+  
+  .page-content h2 {
+    font-size: 2rem;
+    /* border: 2px solid yellow; */
+  }
+  
+  .page-content h3 {
+    font-size: 0.8rem;
+    /* border: 2px solid red; */
+  }
+  
+  .end-logo {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid white; */
+    z-index: 1000000;
+    justify-content: center;
+  }
+  
+  .end-logo img {
+    width: 30%;
+    height: auto;
+  }
+  
+  .zigzag-section {
+    color: white;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10rem;
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    padding-bottom: 0;
+    height:100vh;
+  
+  }
+  
+  .zigzag-image img,
+  .zigzag-image2 img {
+    width: 100%;
+    display: block;
+    /* filter: grayscale(20); */
+  }
+  
+  .zigzag-image {
+    width: 40%;
+    order: 1;
+    /* border: 1px solid red; */
+  }
+  
+  .zigzag-text {
+    width: 40%;
+    order: 2;
+    /* border: 1px solid yellow; */
+    margin-right: 1.5rem;
+    /* margin-top: 0; */
+  }
+  
+  
+  .zigzag-image2 {
+    width: 40%;
+    order: 2;
+    /* flex-shrink: 5; */
+    /* border: 5px solid blue; */
+  }
+  
+  
+  .zigzag-text2 {
+    width: 40%;
+    order: 1;
+    /* flex-shrink: 1; */
+    /* border: 5px solid pink; */
+    margin-left: 1.5rem;
+  }
+  
+  .zigzag-text2 h2,
+  .zigzag-text h2 {
+    font-family: 'Yanhei', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 0.1rem;
+    color: white;
+    /* background: linear-gradient(to right, #b523f9, #4fffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+  
+  .zigzag-text2 p,
+  .zigzag-text p {
+    font-size: 0.8rem;
+  }
+  
+  .zigzag-image,
+  .zigzag-image2 {
+    margin: 0;
+  }
+  
+  .zigzag-text .payment-submit-button {
+    width: 100%;
+  }
+  
+  .zigzag-text-header {
+    flex-direction: row;
+    max-width: 100%;
+    gap: 0.6rem;
+    /* border:2px solid red; */
+  }
+  
+  
+  .text-wrapper {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+  }

@@ -7,3 +7,8 @@
     font-family: Poppins;
     src: url(../fonts/Poppins/Poppins-Regular.ttf), url(../fonts/Poppins/Poppins-Black.ttf), url(../fonts/Poppins/Poppins-Light.ttf), url(../fonts/Poppins/Poppins-Medium.ttf);
 }
+
+@font-face {
+    font-family: PoppinsBlack;
+    src: url(../fonts/Poppins/Poppins-Black.ttf);
+}
