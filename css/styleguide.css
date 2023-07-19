@@ -4,6 +4,62 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0.1rem;
+}
+main h1{
+    font-family: 'PoppinsBlack', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+}
+main h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.border{
+    border-top:1px dashed white;
+    margin-bottom: 2rem;
+    padding-top:1rem;
+}
+
+.image-link img:hover, .image-link img:focus{
+    transform: scale(1.02);
+}
+.image-link img{
+    width:50%;
+}
+
+/* four levels of heading css */
+
+.header-box h1{
+    font-family: 'PoppinsBlack', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    margin:0;
+    padding:0;
+
+}
+.header-box h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin:0;
+    padding:0;
+}
+.header-box h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin:0;
+    padding:0;
+}
+.header-box h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin:0;
+    padding:0;
+
+}
+
 /* navigation bar css */
 .header {
     /* padding: 1rem; */
@@ -136,7 +192,7 @@ body{
 /* cited from:https://codepen.io/eehayman/pen/WoWzWd */
 .intextLink {
     max-width: 100%;
-    color: #04AA6D;
+    color: #fd8af6;
     position: relative;
     text-decoration: none;
     font-weight: lighter;
@@ -177,17 +233,23 @@ main{
   
   .brand-block {
     /* background-color: white; */
-    max-width: 22rem;
+    width: 30rem;
     padding: 1.5rem;
-    align-items: center;
+    /* align-items: center; */
     border: 1px solid white;
   }
   
   .brand-block h2,
-  .branding-block h4 {
+  .brand-block h4, .brand-block h1 {
     margin-bottom: 1rem;
+    font-size: 2rem;
   }
   
+  .brand-box h2,
+  .brand-box h4, .brand-box h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
   .brand-block-p {
     margin-bottom: 1.4rem;
     /* border:1px solid black; */
@@ -199,15 +261,15 @@ main{
   
   .brand-color1 {
     background: linear-gradient(to right, #f923eb, #4ff3ff);
-    padding: 3rem;
-    width: 20rem;
+    padding: 1.5rem;
+    width: 30rem;
     height: auto;
   }
   
   .brand-color-black {
     background-color: black;
-    padding: 3rem;
-    width: 20rem;
+    padding: 1.5rem;
+    width: 30rem;
     height: auto;
     border: 1px solid white;
   }
@@ -237,16 +299,6 @@ main{
     gap: 0.5rem;
   }
   
-  .brandinfo p {
-    font-size: 0.9rem;
-    max-width: 90%;
-    margin-top: 0;
-  
-  }
-  
-  .brandinfo h4 {
-    margin-bottom: 0.4rem;
-  }
 
 
   
@@ -349,7 +401,7 @@ main{
     margin-top: 5rem;
     margin-bottom: 8rem;
     padding-bottom: 0;
-    height:100vh;
+    /* height:100vh; */
   
   }
   
@@ -393,16 +445,14 @@ main{
   
   .zigzag-text2 h2,
   .zigzag-text h2 {
-    font-family: 'Yanhei', sans-serif;
-    font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 0;
     letter-spacing: 0.1rem;
     color: white;
-    /* background: linear-gradient(to right, #b523f9, #4fffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    font-family: 'PoppinsBlack', sans-serif;
+    font-size: 3rem;
+    padding: 0;
   }
   
   .zigzag-text2 p,
@@ -435,3 +485,217 @@ main{
   .visible {
     opacity: 1;
   }
+
+
+
+  /* bubbles  */
+
+
+.bubble-container {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.bubble {
+    /* width: 20px;
+    height: 20px; */
+    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    /* Change the color and transparency here */
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    transform: translate(-50%, -50%);
+    animation: bubbleAnimation 10s infinite;
+    z-index: 10000000;
+}
+
+.bubble2 {
+    /* width: 20px;
+    height: 20px; */
+    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    /* Change the color and transparency here */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    animation: bubbleAnimation 10s infinite;
+    z-index: 10000000;
+}
+
+.bubble-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 0.06rem;
+    text-align: center;
+    text-decoration: none;
+    /* position: relative;
+    bottom: 0;
+    left: 0; */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: floating 2s infinite;
+    filter:blur(20);
+    margin-top: 2rem;
+}
+
+/* Animation for bubble button floating */
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(5px, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Animation for bubble button rolling when hovering */
+.bubble-btn:hover {
+    animation: rolling 0.5s linear;
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+/* bubble animation  */
+
+@keyframes bubbleAnimation {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translate(var(--x), var(--y));
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(var(--x2), var(--y2));
+        opacity: 0;
+    }
+
+}
+
+.bubble-1 {
+    --x: 20vw;
+    --y: -10vh;
+    --x2: 10vw;
+    --y2: -20vh;
+    animation-delay: 1s;
+    width: 20px;
+    height: 20px;
+}
+
+.bubble-2 {
+    --x: -5vw;
+    --y: -10vh;
+    --x2: 100px;
+    --y2: 3vh;
+    animation-delay: 2s;
+    width: 35px;
+    height: 35px;
+}
+
+.bubble-3 {
+    --x: 10vw;
+    --y: -10vh;
+    --x2: 6vw;
+    --y2: -24vh;
+    animation-delay: 1.5s;
+    width: 26px;
+    height: 26px;
+}
+
+.bubble-4 {
+    --x: -4vw;
+    --y: 8vh;
+    --x2: 6vw;
+    --y2: 3vh;
+    animation-delay: 2.5s;
+    width: 25px;
+    height: 25px;
+}
+
+.bubble-5 {
+    --x: -7vw;
+    --y: 10vh;
+    --x2: -3vw;
+    --y2: 15vh;
+    animation-delay: 1.2s;
+    width: 40px;
+    height: 40px;
+}
+
+.bubble-6 {
+    --x: 3vw;
+    --y: -5vh;
+    --x2: 0vw;
+    --y2: -10vh;
+    animation-delay: 0.8s;
+    width: 22px;
+    height: 22px;
+}
+
+.bubble-7 {
+    --x: 15vw;
+    --y: -8vh;
+    --x2: 2vw;
+    --y2: -9vh;
+    animation-delay: 1.8s;
+    width: 32px;
+    height: 32px;
+}
+
+.bubble-8 {
+    --x: -6vw;
+    --y: 20vh;
+    --x2: -4vw;
+    --y2: 18vh;
+    animation-delay: 2.2s;
+    width: 36px;
+    height: 36px;
+}
+
+.bubble-9 {
+    --x: -2vw;
+    --y: 30vh;
+    --x2: -3vw;
+    --y2: 25vh;
+    animation-delay: 0.5s;
+    width: 26px;
+    height: 26px;
+}
+
+.bubble-10 {
+    --x: -5vw;
+    --y: 15vh;
+    --x2: -3vw;
+    --y2: 10vh;
+    animation-delay: 1.5s;
+    width: 30px;
+    height: 30px;
+}
+
+
