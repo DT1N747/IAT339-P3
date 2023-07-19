@@ -2,7 +2,8 @@ main {
     margin-bottom: 10rem;
     /* border: 1px solid red; */
 }
-*{
+
+* {
     /* border: 1px solid blue; */
 }
 
@@ -183,13 +184,13 @@ body {
     z-index: 10000;
 }
 
-.banner img{
+.banner img {
     /* position: absolute; */
     width: 100%;
     padding: 0;
     margin: 0;
     object-fit: cover;
-    filter:brightness(0.5);
+    filter: brightness(0.5);
     /* border: 1px solid white; */
 }
 
@@ -203,9 +204,9 @@ body {
     text-align: center;
     color: white;
     z-index: 100000;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:0;
+    gap: 0;
 }
 
 .header-overlay p {
@@ -213,26 +214,27 @@ body {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    color:grey;
+    color: grey;
 }
 
-.header-text{
+.header-text {
     /* border: 1px solid white; */
     font-weight: 100;
     font-size: 3rem;
     text-align: center;
-    margin:0;
-    padding:0;
-    color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
 }
-.header-text-strong{
+
+.header-text-strong {
     /* border: 1px solid white; */
-    font-family: 'PoppinsBlack',sans-serif;
-    margin:0;
-    padding:0;
+    font-family: 'PoppinsBlack', sans-serif;
+    margin: 0;
+    padding: 0;
     font-weight: 900;
     font-size: 4.5rem;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -379,15 +381,14 @@ body {
 
 .zigzag-text2 h2,
 .zigzag-text h2 {
-    font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 0;
     letter-spacing: 0.1rem;
     color: white;
-    /* background: linear-gradient(to right, #b523f9, #4fffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    font-family: 'PoppinsBlack', sans-serif;
+    font-size: 3rem;
+    padding: 0;
 }
 
 .zigzag-text2 p,
@@ -461,25 +462,26 @@ body {
 }
 
 .intro {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: left;
     color: white;
     margin: 50% 20%;
     letter-spacing: 0.05rem;
-    height:50vh;
+    height: 50vh;
 }
 
 .intro h2 {
-    font-family: 'PoppinsBlack',sans-serif;
+    font-family: 'PoppinsBlack', sans-serif;
     font-size: 3rem;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 .intro h3 {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .intro p {
@@ -522,6 +524,61 @@ body {
     animation: bubbleAnimation 10s infinite;
     z-index: 10000000;
 }
+
+.bubble-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 0.06rem;
+    text-align: center;
+    text-decoration: none;
+    /* position: relative;
+    bottom: 0;
+    left: 0; */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: floating 2s infinite;
+    filter:blur(20);
+    margin-top: 2rem;
+}
+
+/* Animation for bubble button floating */
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(5px, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Animation for bubble button rolling when hovering */
+.bubble-btn:hover {
+    animation: rolling 0.5s linear;
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+/* bubble animation  */
 
 @keyframes bubbleAnimation {
     0% {
