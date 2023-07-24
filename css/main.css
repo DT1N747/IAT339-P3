@@ -1,11 +1,8 @@
 main {
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     /* border: 1px solid red; */
 }
 
-* {
-    /* border: 1px solid blue; */
-}
 
 body {
     background-color: #000000;
@@ -500,7 +497,7 @@ body {
 .bubble {
     /* width: 20px;
     height: 20px; */
-    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    background: linear-gradient(to right, #f923eb93, #4ff3ff75);
     /* Change the color and transparency here */
     border-radius: 50%;
     position: absolute;
@@ -514,7 +511,7 @@ body {
 .bubble2 {
     /* width: 20px;
     height: 20px; */
-    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    background: linear-gradient(to right, #f923eb93, #4ff3ff75);
     /* Change the color and transparency here */
     border-radius: 50%;
     position: absolute;
@@ -529,10 +526,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    background: linear-gradient(to right, #f923eb, #4ff3ff);
+    background: linear-gradient(to right, #f923ebbd, #4ff3ffc3);
     color: #ffffff;
     font-size: 0.8rem;
     letter-spacing: 0.06rem;
@@ -604,8 +601,8 @@ body {
     --x2: 10vw;
     --y2: -20vh;
     animation-delay: 1s;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 .bubble-2 {
@@ -624,8 +621,8 @@ body {
     --x2: 6vw;
     --y2: -24vh;
     animation-delay: 1.5s;
-    width: 26px;
-    height: 26px;
+    width: 46px;
+    height: 46px;
 }
 
 .bubble-4 {
@@ -674,8 +671,8 @@ body {
     --x2: -4vw;
     --y2: 18vh;
     animation-delay: 2.2s;
-    width: 36px;
-    height: 36px;
+    width: 66px;
+    height: 66px;
 }
 
 .bubble-9 {
