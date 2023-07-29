@@ -2,7 +2,9 @@ main {
     margin-bottom: 6rem;
     /* border: 1px solid red; */
 }
-
+*{
+    border:2px solid red;
+}
 
 body {
     background-color: #000000;
@@ -171,7 +173,7 @@ body {
 /* banner css */
 
 .banner {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     position: relative;
     /* border: 10px solid red; */
     width: 100%;
@@ -188,7 +190,7 @@ body {
     margin: 0;
     object-fit: cover;
     filter: brightness(0.5);
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 .header-overlay {
@@ -699,6 +701,9 @@ body {
     width:30px;
     height:auto;
 }
+.contact img:hover, .contact img:focus{
+    transform: scale(1.1);
+}
 .contact{
     display: flex;
     flex-direction: column;
@@ -724,24 +729,6 @@ body {
 
 @media screen and (max-width: 748px) {
 
-    .header-text {
-        font-size: 4rem;
-    }
-
-    .header-overlay {
-        top: 70%;
-        /* left: 48%; */
-    }
-
-    .header-overlay p {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    .banner-video {
-        /* margin-top: -230px; */
-        width: 100%;
-    }
 
     /* zigzag responsiveness */
     .zigzag-section {
@@ -822,5 +809,19 @@ body {
     .slideshow {
         height: auto;
         width: 100%;
+    }
+
+    .banner{
+        width:100%;
+        border:2px solid red;
+    }
+    .banner img{
+        width:100%;
+    }
+    main{
+        width:100%;
+        margin:0;
+        padding:0;
+        border:2px solid red;
     }
 }
