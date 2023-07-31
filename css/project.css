@@ -96,6 +96,7 @@ main {
 @media screen and (max-width: 748px) {
     main{
         margin-top: 4rem;
+        margin-bottom: 4rem;
     }
     .container-heading h2 {
         text-align: center;
