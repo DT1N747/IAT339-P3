@@ -4,10 +4,11 @@
     align-items: center;
     justify-content: center;
     /* border: 1px solid pink; */
-    gap:2rem;
+    gap: 2rem;
     margin-top: 4rem;
 }
-main{
+
+main {
     margin-top: 8rem;
 }
 
@@ -21,12 +22,14 @@ main{
     width: 70%;
     /* border: 1px solid pink; */
 }
-.container-video{
-    display:flex;
+
+.container-video {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container-heading h2{
+
+.container-heading h2 {
     text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 0;
@@ -36,11 +39,13 @@ main{
     font-size: 3rem;
     padding: 0;
 }
-.container-details{
-    width:70%;
-    margin:0;
+
+.container-details {
+    width: 70%;
+    margin: 0;
 }
-.container-details h5{
+
+.container-details h5 {
     text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 0;
@@ -50,8 +55,9 @@ main{
     font-size: 1.4rem;
     padding: 0;
 }
-.container-details p{
-    margin:0.5rem 0;
+
+.container-details p {
+    margin: 0.5rem 0;
     font-size: 0.8rem;
 }
 
@@ -78,14 +84,63 @@ main{
     margin-bottom: 0.8rem;
     font-size: 0.8rem;
 }
-.images{
+
+.images {
     margin-top: 2rem;
 }
 
-.contact{
+.contact {
     margin-top: 6rem;
 }
 
-@media screen and (max-width: 748px){
-    
+@media screen and (max-width: 748px) {
+    main{
+        margin-top: 4rem;
+    }
+    .container-heading h2 {
+        text-align: center;
+        font-size: 1.4rem;
+        width:100%;
+    }
+
+    .container {
+        padding: 1rem;
+        margin: 0;
+        /* border: 1px solid white; */
+    }
+
+    .container video {
+        width: 100%;
+    }
+
+    .container img,
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-container-row {
+        flex-direction: column;
+    }
+    .container-details{
+        width:100%;
+    }
+    .container-details h5{
+        font-size: 0.8rem;
+    }
+    .container-details p{
+        font-size: 0.7rem;
+    }
+    .image-container{
+        padding:1rem;
+        /* border: 1px solid white; */
+        width:90%;
+    }
+    .images figcaption {
+        font-size: 0.6rem;
+    }
+    .container figcaption{
+        margin-top: 0.5rem;
+        font-size: 0.6rem;
+    }
 }
