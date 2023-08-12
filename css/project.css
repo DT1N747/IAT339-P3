@@ -7,6 +7,16 @@
     gap: 2rem;
     margin-top: 4rem;
 }
+*{
+    /* border:1px solid white; */
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
 
 main {
     margin-top: 8rem;
@@ -78,7 +88,13 @@ main {
     /* border: 1px solid white; */
 }
 
-.images figcaption {
+.image-caption{
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+}
+.caption{
     text-align: center;
     margin-top: 0.2rem;
     margin-bottom: 0.8rem;
